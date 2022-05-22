@@ -1,17 +1,18 @@
 package zeneszek;
 
+import java.io.Serializable;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
 
 /**
  * @author D8IE65
  *
  * Zenészek definiálása
  */
-public class Musician implements Comparable<Musician> {
+public class Musician implements Comparable<Musician>, Serializable {
+    
+    private static final long serialVersionUID = 1L;
 
     // tud táncolni és/ vagy énekelni
     private boolean doesDance;
